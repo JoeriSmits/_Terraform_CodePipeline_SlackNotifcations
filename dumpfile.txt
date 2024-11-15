@@ -1,0 +1,16 @@
+arn:aws:codepipeline:eu-west-1:129438740178:hjl-strapi-server-test
+C07UPENBN9X
+
+validation {
+    condition = strcontains(var.codenotification_pipeline_arn, "codepipeline") && var.codenotification_pipeline_arn != null
+    error_message = "ARN is geen codepipeline. Geef de ARN van de codepipeline."
+  }
+  data.aws_iam_role.notification-bot-iam-data-role.arn
+
+
+data "aws_iam_role" "notification-bot-iam-data-role" {
+  name = "notification-bot-role"
+}
+
+: data.aws_iam_role.notification-bot-iam-data-role.arn)
+

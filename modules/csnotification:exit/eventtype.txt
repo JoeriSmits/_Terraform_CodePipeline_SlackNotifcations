@@ -1,0 +1,1 @@
+["codebuild-project-build-state-failed","codebuild-project-build-state-succeeded", "codebuild-project-build-state-in-progress", "codebuild-project-build-state-stopped", "codebuild-project-build-phase-failure", "codebuild-project-build-phase-success"]
