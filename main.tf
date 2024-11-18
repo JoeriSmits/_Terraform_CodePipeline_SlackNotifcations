@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "Webbio"
+
+    workspaces {
+      name = "YoreM_CodePipeline_SlackNotifications"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
