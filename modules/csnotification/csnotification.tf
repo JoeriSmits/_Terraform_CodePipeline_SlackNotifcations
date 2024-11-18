@@ -4,10 +4,6 @@ module "slack-chatbot" {
   slack_channel_id = var.slack_channel_id
 }
 
-locals {
-  code_pipeline_arn_split = 
-}
-
 resource "aws_codestarnotifications_notification_rule" "notification-rule" {
   for_each = toset(var.codenotification_pipeline_arn)
   detail_type = "FULL"
